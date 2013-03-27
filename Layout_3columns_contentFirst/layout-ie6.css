@@ -1,0 +1,14 @@
+body {
+    width: 50em;
+    width: expression(w=document.documentElement.offsetWidth, em=document.getElementById("nav").offsetWidth/12, (w<40*em?"40em": (w>56*em?"56em":"auto")));
+}
+
+#wrapper {
+    height: 1em;
+}
+
+#nav {
+    margin-left: -22em;
+    margin-left: expression((-(document.getElementById("wrapper").clientWidth))+"px");
+    left: 13em;
+}
